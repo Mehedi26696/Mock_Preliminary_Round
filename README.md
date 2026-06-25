@@ -19,6 +19,7 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 
 Open:
 
+- Root status: `http://localhost:8000/`
 - Health: `http://localhost:8000/health`
 - API docs: `http://localhost:8000/docs`
 
