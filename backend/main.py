@@ -200,6 +200,11 @@ def summarize(case_type: CaseType, message: str) -> str:
     return summaries[case_type]
 
 
+@app.get("/")
+def root() -> dict[str, str]:
+    return {"status": "ok", "service": "QueueStorm Warmup Ticket Sorter"}
+
+
 @app.get("/health")
 def health() -> dict[str, str]:
     return {"status": "ok"}
